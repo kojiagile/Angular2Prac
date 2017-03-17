@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Post } from './post';
+import { Post } from '../post';
 import {DatePipe} from "@angular/common"
-import {PostService} from './service/post.service'
+import {PostService} from '../service/post.service'
 
 @Component({
   selector: 'add-post',

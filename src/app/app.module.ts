@@ -5,9 +5,9 @@ import { HttpModule, JsonpModule, Jsonp } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module'
 
 import { AppComponent } from './app.component';
-import { PostComponent } from './post.component';
-import { AddPostComponent }   from './addpost.component';
-import { PreviewPostComponent }   from './preview-post.component';
+import { PostComponent } from './post/post.component';
+import { AddPostComponent }   from './addpost/addpost.component';
+import { PreviewPostComponent }   from './preview-post/preview-post.component';
 
 import {PostService} from './service/post.service';
 import { PostDirectiveDirective } from './post-directive.directive';

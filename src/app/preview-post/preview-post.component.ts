@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Post } from './post';
+import { Post } from '../post';
 import {DatePipe} from "@angular/common"
 
 @Component({

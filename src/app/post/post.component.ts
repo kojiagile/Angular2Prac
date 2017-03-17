@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from './post';
+import { Post } from '../post';
 import { DatePipe } from "@angular/common"
 import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
@@ -7,8 +7,8 @@ import { Http, Response } from '@angular/http';
 // Observable class extensions
 import 'rxjs/add/observable/of';
 
-import {PostService} from './service/post.service'
-import { PostDirectiveDirective } from './post-directive.directive'
+import {PostService} from '../service/post.service'
+import { PostDirectiveDirective } from '../post-directive.directive'
 
 @Component({
   selector: 'post-component',
