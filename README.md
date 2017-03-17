@@ -1,4 +1,9 @@
-# Prac
+# Angular2 Practice project
+This is a project for practicing Angular2 app development.  
+Implement a bit of basic stuff such as property/input/two-way data binding, adding unit test cases, etc.  
+The app interects with a real web API that I created (in webapi folder).  
+Not a beautiful looks, but that's not the point...
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
