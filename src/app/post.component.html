@@ -1,0 +1,34 @@
+<div class="editor">
+  <div class="leftside">
+    Posts:
+    <ul>
+      <li *ngFor="let post of posts">
+        {{post.id}}: <a (click)="showDetail(post)">{{post.title}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="rightside">
+    <div *ngIf="selectedPost" class="postDetails">
+      <div class="postHeader">
+        <input [(ngModel)]="selectedPost.title" >
+        <input [(ngModel)]="selectedPost.date" >
+      </div>
+      <div>
+        <textarea [(ngModel)]="selectedPost.content" class="postContent"></textarea>
+      </div>
+    </div>
+    <div *ngIf="selectedPost == null">
+      Select a post from the list.
+    </div>
+  </div>
+</div>
+
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<div *ngIf="selectedPost" class="postDetails" [highlightPreview]="color">
+  <preview-post [previewPost]="selectedPost"></preview-post>
+</div>

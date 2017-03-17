@@ -1,0 +1,12 @@
+<div class="preview">
+  <h4> - Preview - </h4>
+  <div *ngIf="previewPost">
+    <span class="postTitle">{{previewPost.title}}</span>
+    <span>
+      {{previewPost.date}}
+    </span>
+    <div>
+      <pre>{{ previewPost.content}}</pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<label>Title:</label>
+<br>
+<input class="newTitle" #post.title  [(ngModel)]="post.title">
+<br><br>
+<!--<label>Date:</label>
+<br>
+<input #post.date [(ngModel)]="post.date">
+<br><br>-->
+
+<textarea class="newContent" [(ngModel)]="post.content"></textarea>
+<br>
+<br>
+<button (click)="save()">Save Post</button>
+<br>
+<div *ngIf="message">
+  {{message}}
+</div>
+
+<br>
+<div *ngIf="post" class="postDetails">
+  <preview-post [previewPost]="post"></preview-post>
+</div>

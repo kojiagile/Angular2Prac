@@ -1,0 +1,12 @@
+<p>
+  post-search works!
+</p>
+<div>Post Search: type (part of) post title.</div>
+<input #searchBox id="search-box" (keyup)="titleSearch(searchBox.value)" />
+<div *ngFor="let post of posts | async">
+  - <span (click)=select(post) class="searchResult">{{post.title}} ({{post.date}})</span>
+</div>
+<hr>
+<div *ngIf="selectedPost">
+  <preview-post [previewPost]="selectedPost"></preview-post>
+</div>

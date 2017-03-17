@@ -1,0 +1,8 @@
+.newContent {
+    width: 90%;
+    height: 300px;
+    overflow-y: auto;
+}
+.newTitle {
+    width: 90%;
+}

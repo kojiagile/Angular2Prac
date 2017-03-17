@@ -1,0 +1,5 @@
+.searchResult:hover {
+    color: #fff;
+    background-color: cadetblue;
+    cursor: pointer;
+}
